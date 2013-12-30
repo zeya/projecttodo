@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  module: MyString
+  task_title: MyString
+  started: 2013-12-30 15:28:06
+  finished: 2013-12-30 15:28:06
+  done_by: MyString
+  test_by: MyString
+  status: MyString
+
+two:
+  module: MyString
+  task_title: MyString
+  started: 2013-12-30 15:28:06
+  finished: 2013-12-30 15:28:06
+  done_by: MyString
+  test_by: MyString
+  status: MyString

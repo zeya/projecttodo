@@ -1,0 +1,12 @@
+<%= simple_form_for @task, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :module, :collection =>["BK : Product", "BK : Product Category", "BK : Purchase", "BK : Inventory", "BK : Patient", "BK : Report", "BK : Employee", "API : Patients", "API : Invoices", "API : Test", "API : Examination", "API : Products", "API : Sessions", " APP : Login", "APP : Patient", "APP : Sales", "APP : Doctor", "APP : Test/Examination"] %>
+  <%= f.input :task_title %>
+  <%= f.input :done_by, :collection => ["Thein Lin Kyaw", "Thin Ei", "Nwe Ni", "Phyu Ei", "Aye Khine", "Zeya", "Tin Kyaw", "Myo Thu"] %>
+  <%= f.input :test_by, :collection => ["Thein Lin Kyaw", "Thin Ei", "Nwe Ni", "Phyu Ei", "Aye Khine", "Zeya", "Tin Kyaw", "Myo Thu"] %>
+  <%= f.input :status, :collection => ["open", "processing", "completed", "testing", "tested","test-fail"] %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                tasks_path, :class => 'btn' %>
+  </div>
+<% end %>
