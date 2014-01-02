@@ -3,6 +3,15 @@
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
 </div>
 <%= render :partial => 'form' %>
+<ul>
+	<li><button id="allbtn" class="btn">All</button></li>
+	<li><button id="pendingbtn" class="btn">Pending</button></li>
+	<li><button id="processingbtn" class="btn">Processing</button></li>
+	<li><button id="completedbtn" class="btn">Completed</button></li>
+	<li><button id="testingbtn" class="btn">Testing</button></li>
+	<li><button id="testfailbtn" class="btn">Test Fail</button></li>
+	
+</ul>
 <table class="table table-striped">
   <thead>
     <tr>
